@@ -1,0 +1,52 @@
+.hero-image {
+    background-image: url("https://dataoptin.com/wp-content/uploads/2021/05/AdobeStock_223290240-1-scaled.jpeg");
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; 
+    height: 40vh; /* Adjust height as needed */
+    width: 100vw;
+    position: relative; /* Make sure the element is positioned */
+    z-index: -10; /* z-index value must be an integer */
+    background-color: (0,0,0,0.1);
+}
+
+.hero-image h1 {
+    color: red;
+    font-size: 5rem;
+}
+
+nav {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    background-color: chartreuse;
+    justify-content: space-between;
+    width: 100vw;
+    margin: 0;
+    position: relative; /* Make sure the element is positioned */
+    z-index: 2; /* z-index value must be an integer */
+}
+footer{
+    height: 8vh;
+    background-color: chartreuse;
+    /* color: white; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img {
+    height: 8vh;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    text-align: right;
+}
+
+nav ul li {
+    margin: 0 15px; /* Adding horizontal margin between list items */
+}

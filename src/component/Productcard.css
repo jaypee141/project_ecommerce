@@ -1,0 +1,99 @@
+
+.product-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container {
+    background-color: chartreuse;
+    padding: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+.written p{
+    text-align: left;
+}
+
+.container img {
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+
+.product-details {
+    display: flex;
+    border: 2px solid blue;
+    background-color: chartreuse;
+    padding: 10px;
+    width: 100%;
+    /* height: auto;  */
+}
+
+.image1 {
+    width: 40%; 
+    margin-right: 20px; 
+}
+
+.image1 img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.written {
+    width: 60%;
+}
+.written h4{
+    text-align: right;
+}
+.written h3{
+    margin-left: 20px;
+}
+
+.dis {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+}
+
+.dis p {
+    margin: 0px 20px; /* Adds some space between the heading and the paragraph */
+    text-align: left;
+}
+
+.last {
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+
+.last h4 {
+    text-align: start;
+}
+
+.last button {
+    width: 6vw;
+    height: 5vh;
+    margin-top: 10px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%; /* 1 card per row */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 48%; /* 2 cards per row */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 23%; /* 4 cards per row */
+    }
+}
